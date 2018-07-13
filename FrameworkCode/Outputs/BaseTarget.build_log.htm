@@ -1,0 +1,99 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+U:\tzahroof\218B super duper lemon scooper final pseudo flat heirarchal code\FrameworkCode\UVFrameworkTemplate.uvprojx
+Project File Date:  03/05/2018
+
+<h2>Output:</h2>
+Rebuild target 'BaseFrameworkTarget'
+compiling main.c...
+compiling EventCheckers.c...
+compiling MotorService.c...
+Source\MotorService.c(407): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    IntegralTerm += iGain * RPMError;
+Source\MotorService.c(408): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    IntegralTerm2 += iGain * RPMError2;
+Source\MotorService.c(413): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    RequestedDuty = (pGain * ((RPMError)+IntegralTerm+(dGain * (RPMError-LastError))));
+Source\MotorService.c(414): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    RequestedDuty2 = (pGain * ((RPMError2)+IntegralTerm2+(dGain * (RPMError2-LastError2)))); 
+Source\MotorService.c(420): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        IntegralTerm -= iGain * RPMError; // subtract from error sum 
+Source\MotorService.c(425): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        IntegralTerm -= iGain * RPMError;  // subtract from error sum
+Source\MotorService.c(431): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        IntegralTerm2 -= iGain * RPMError; // subtract from error sum 
+Source\MotorService.c(436): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        IntegralTerm2 -= iGain * RPMError;  // subtract from error sum
+Source\MotorService.c(70): warning:  #177-D: variable "TIMER_RATE" was declared but never referenced
+  static uint32_t TIMER_RATE = 5000;
+Source\MotorService.c: 9 warnings, 0 errors
+compiling TestHarnessService0.c...
+Source\TestHarnessService0.c(128): warning:  #940-D: missing return statement at end of non-void function "InitTestHarnessService0"
+  }
+Source\TestHarnessService0.c(276): warning:  #177-D: function "InitLED" was declared but never referenced
+  static void InitLED(void)
+Source\TestHarnessService0.c(290): warning:  #177-D: function "BlinkLED" was declared but never referenced
+  static void BlinkLED(void)
+Source\TestHarnessService0.c(67): warning:  #177-D: variable "DeferralQueue" was declared but never referenced
+  static ES_Event_t DeferralQueue[3 + 1];
+Source\TestHarnessService0.c: 4 warnings, 0 errors
+compiling TemplateFSM.c...
+compiling PWMLib.c...
+compiling SPI.c...
+compiling TapeDetectorService.c...
+compiling Detecter_Service.c...
+compiling ReloadService.c...
+Source\ReloadService.c(144): warning:  #61-D: integer operation result is out of range
+    HWREG(NVIC_PRI24) = (HWREG(NVIC_PRI24)& ~NVIC_PRI24_INTD_M)| (7 << NVIC_PRI24_INTD_S);
+Source\ReloadService.c(144): warning:  #68-D: integer conversion resulted in a change of sign
+    HWREG(NVIC_PRI24) = (HWREG(NVIC_PRI24)& ~NVIC_PRI24_INTD_M)| (7 << NVIC_PRI24_INTD_S);
+Source\ReloadService.c(174): warning:  #177-D: variable "num" was declared but never referenced
+      uint32_t num = 0;
+Source\ReloadService.c(175): warning:  #177-D: variable "den" was declared but never referenced
+      uint32_t den = 0;
+Source\ReloadService.c(36): warning:  #550-D: variable "prev_error" was set but never used
+  static float prev_error = 0;
+Source\ReloadService.c: 5 warnings, 0 errors
+compiling OffenceService.c...
+compiling ShooterService.c...
+compiling DefenceService.c...
+compiling MasterSM.c...
+assembling startup_rvmdk.S...
+compiling ES_ShortTimer.c...
+compiling EnablePA25_PB23_PD7_PF0.c...
+compiling ES_CheckEvents.c...
+compiling ES_DeferRecall.c...
+compiling ES_Framework.c...
+compiling ES_LookupTables.c...
+compiling ES_Port.c...
+compiling ES_PostList.c...
+compiling ES_Queue.c...
+compiling ES_Timers.c...
+compiling retarget.c...
+compiling termio.c...
+compiling uartstdio.c...
+linking...
+Program Size: Code=17564 RO-data=1344 RW-data=200 ZI-data=6408  
+After Build - User command #1: fromelf --bin --output .\Outputs\BaseTarget.bin .\Outputs\BaseTarget.axf
+".\Outputs\BaseTarget.axf" - 0 Error(s), 18 Warning(s).
+Load "U:\\tzahroof\\218B super duper lemon scooper final pseudo flat heirarchal code\\FrameworkCode\\Outputs\\BaseTarget.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+</pre>
+</body>
+</html>
+rget DLL has been cancelled
+Load "U:\\tzahroof\\218B super duper lemon scooper final pseudo flat heirarchal code\\FrameworkCode\\Outputs\\BaseTarget.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Connection failed!, error code=&d
+Error: Flash Download failed  -  Target DLL has been cancelled
+Load "U:\\tzahroof\\218B super duper lemon scooper final pseudo flat heirarchal code\\FrameworkCode\\Outputs\\BaseTarget.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
